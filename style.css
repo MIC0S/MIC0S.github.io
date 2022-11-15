@@ -81,6 +81,9 @@ header h3 {
 	margin-left: 20vw;
 	margin-right: 20vw;
 }
+#about {
+	background-color: #030217;
+}
 #skills {
 	height: 60vh;
 	background-color: #030217;
@@ -132,10 +135,10 @@ header h3 {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 
-	background: rgba( 34, 2, 89, 0.4 );
+	background: rgba( 13, 5, 43, 0.8 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	backdrop-filter: blur( 4px );
-	-webkit-backdrop-filter: blur( 4px );
+	backdrop-filter: blur( 5px );
+	-webkit-backdrop-filter: blur( 5px );
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 
@@ -147,12 +150,59 @@ header h3 {
 .skillTypeFront {
 	font-size: 2vmax;
 }
+#projects {
+	min-height: 60vh;
+	background-color: #030217;
+	
+	display: grid; 
+	grid-auto-rows: 1fr; 
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: auto; 
+	gap: 0px 0px; 
+	grid-template-areas: "title title"; 
+
+	font-family: 'Fira Code', monospace;
+	color: white;
+
+	position: relative;
+}
+#projects h1 {
+	grid-area: title;
+	text-align: center;
+}
+#projects a {
+	padding: 5vmax;
+	text-decoration: none;
+	position: inherit;
+}
+#projects a:visited {
+	text-decoration: none;
+}
+#projects img {
+	max-height: 100%;
+	min-height: 100%;
+
+	max-width: 100%;
+	min-width: 100%;
+	/* position: absolute; */
+	backdrop-filter: brightness(60%);
+}
+#projects a h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color: white;
+	font-size: 8vh;
+}
 .splitter {
 	margin: 0;
-	/* margin-left: 20vw;
-	margin-right: 20vw; */
-	border-bottom: 3px solid grey;
-	border-radius: 5px;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	border: none;
+	border-bottom: 3px solid #FFFFFF;
+	# border-radius: 5px;
 }
 footer .separator {
 	border: none;
